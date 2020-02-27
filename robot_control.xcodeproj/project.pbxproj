@@ -15,6 +15,8 @@
 		A3D8321C24084C410032CE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D8321A24084C410032CE17 /* LaunchScreen.storyboard */; };
 		A3D8322724084C420032CE17 /* robot_controlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D8322624084C420032CE17 /* robot_controlTests.swift */; };
 		A3D8323224084C420032CE17 /* robot_controlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D8323124084C420032CE17 /* robot_controlUITests.swift */; };
+		A3D8324624085C550032CE17 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A3D8324524085C550032CE17 /* Podfile */; };
+		A6CC46B5C8388BA2F6ABB1AA /* Pods_robot_control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AC439BD18AF65B0A00B405 /* Pods_robot_control.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		066E5BE454F16E2F5B0E3318 /* Pods-robot_controlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robot_controlTests.debug.xcconfig"; path = "Target Support Files/Pods-robot_controlTests/Pods-robot_controlTests.debug.xcconfig"; sourceTree = "<group>"; };
+		14AC439BD18AF65B0A00B405 /* Pods_robot_control.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_robot_control.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6983B2A210F2AA4781CA3A /* Pods-robot_control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robot_control.release.xcconfig"; path = "Target Support Files/Pods-robot_control/Pods-robot_control.release.xcconfig"; sourceTree = "<group>"; };
+		43DA417C1E26E60ADFF0ABDA /* Pods-robot_control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robot_control.debug.xcconfig"; path = "Target Support Files/Pods-robot_control/Pods-robot_control.debug.xcconfig"; sourceTree = "<group>"; };
 		A3D8320B24084C3E0032CE17 /* robot_control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = robot_control.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D8320E24084C3E0032CE17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3D8321024084C3E0032CE17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +55,8 @@
 		A3D8322D24084C420032CE17 /* robot_controlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = robot_controlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D8323124084C420032CE17 /* robot_controlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = robot_controlUITests.swift; sourceTree = "<group>"; };
 		A3D8323324084C420032CE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3D8324524085C550032CE17 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		FC47C7FB735703F417168F38 /* Pods-robot_controlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-robot_controlTests.release.xcconfig"; path = "Target Support Files/Pods-robot_controlTests/Pods-robot_controlTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6CC46B5C8388BA2F6ABB1AA /* Pods_robot_control.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +85,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A63DCC32C92B120AE15522B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43DA417C1E26E60ADFF0ABDA /* Pods-robot_control.debug.xcconfig */,
+				3D6983B2A210F2AA4781CA3A /* Pods-robot_control.release.xcconfig */,
+				066E5BE454F16E2F5B0E3318 /* Pods-robot_controlTests.debug.xcconfig */,
+				FC47C7FB735703F417168F38 /* Pods-robot_controlTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A3D8320224084C3E0032CE17 = {
 			isa = PBXGroup;
 			children = (
+				A3D8324524085C550032CE17 /* Podfile */,
 				A3D8320D24084C3E0032CE17 /* robot_control */,
 				A3D8322524084C420032CE17 /* robot_controlTests */,
 				A3D8323024084C420032CE17 /* robot_controlUITests */,
 				A3D8320C24084C3E0032CE17 /* Products */,
+				7A63DCC32C92B120AE15522B /* Pods */,
+				E505578837AF72BAA44AA163 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +151,14 @@
 			path = robot_controlUITests;
 			sourceTree = "<group>";
 		};
+		E505578837AF72BAA44AA163 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14AC439BD18AF65B0A00B405 /* Pods_robot_control.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3D8323624084C420032CE17 /* Build configuration list for PBXNativeTarget "robot_control" */;
 			buildPhases = (
+				DD944D6DF7A81450938284CD /* [CP] Check Pods Manifest.lock */,
 				A3D8320724084C3E0032CE17 /* Sources */,
 				A3D8320824084C3E0032CE17 /* Frameworks */,
 				A3D8320924084C3E0032CE17 /* Resources */,
+				9DFAC81D5FDB6D090891FD1B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +267,7 @@
 			files = (
 				A3D8321C24084C410032CE17 /* LaunchScreen.storyboard in Resources */,
 				A3D8321924084C410032CE17 /* Assets.xcassets in Resources */,
+				A3D8324624085C550032CE17 /* Podfile in Resources */,
 				A3D8321424084C3E0032CE17 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +287,44 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9DFAC81D5FDB6D090891FD1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-robot_control/Pods-robot_control-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-robot_control/Pods-robot_control-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-robot_control/Pods-robot_control-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD944D6DF7A81450938284CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-robot_control-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A3D8320724084C3E0032CE17 /* Sources */ = {
@@ -432,6 +504,7 @@
 		};
 		A3D8323724084C420032CE17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43DA417C1E26E60ADFF0ABDA /* Pods-robot_control.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +522,7 @@
 		};
 		A3D8323824084C420032CE17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D6983B2A210F2AA4781CA3A /* Pods-robot_control.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
